@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Animated Portfolio Website</title>
+</head>
+<body>
+  <section class="banner">
+    <header>
+      <a href="" class="logo"><span>My</span>Portfolio_</a>
+      <ul>
+        <li><a id="links" href="#">Home</a></li>
+        <li><a id="links" href="#">About</a></li>
+        <li><a id="links" href="#">Skills</a></li>
+        <li><a id="links" href="#">Works</a></li>
+        <li><a id="links" href="#">Contact</a></li>
+      </ul>0
+    </header>
+    <div class="content">
+      <h3>Hey_</h3>
+      <h2>I<span>’</span>am<span id="text"></span></h2>
+      <p> This My Portfolio | I Hope You Like It</p>
+      <button>Hire ME</button>
+      <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon> Let’s Chat </button>
+    </div>
+    <img src="img/colors1.jpg" class="colors">
+    <img src="img/1673381624336 (1).png" class="me">
+    <ul class="sci">
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+    </ul>
+    <div class="daynight">
+      <ion-icon name="moon-outline"></ion-icon>
+      <ion-icon name="sunny-outline"></ion-icon>
+    </div>
+  </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script>
+
+    var typed = new Typed("#text",{
+      strings : ["Bassem","Designer","Coder"],
+      loop : true,
+      typeSpeed : 100,
+      backSpeed : 50,
+      backDelay : 1500
+    })
+
+    let banner = document.querySelector('.banner');
+    let daynight = document.querySelector('.daynight');
+  
+    daynight.onclick = function(){
+      banner.classList.toggle('night');
+    };
+  </script>
+</body>
+</html>
