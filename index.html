@@ -55,6 +55,10 @@
         </div>
       </div>
       <button>Download CV</button>
+      <div class="daynight">
+        <ion-icon name="moon-outline"></ion-icon>
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
     </div>
   </div>
     <!---------------------------------------script--------------------------------------------------------->
@@ -63,6 +67,8 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+  <script src="main.js"></script>
   <script>
 
     var typed = new Typed("#text",{
@@ -73,12 +79,6 @@
       backDelay : 1500
     })
 
-    let banner = document.querySelector('.banner');
-    let daynight = document.querySelector('.daynight');
-  
-    daynight.onclick = function(){
-      banner.classList.toggle('night');
-    };
   </script>
 </body>
 </html>

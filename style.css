@@ -187,6 +187,7 @@ header ul li a:hover
   cursor: pointer;
   transition: 0.5s;
   font-size: 2em;
+  z-index: 100;
 }
 .banner.night .daynight
 {
@@ -283,6 +284,10 @@ header ul li a:hover
   color: #e91e63;
   transition: 0.5s;
 }
+.about-me.night h1
+{
+  background:#333 ;
+}
 .about 
 {
   display: flex;
@@ -292,6 +297,10 @@ header ul li a:hover
   padding: 100px;
   background: #fff;
   transition: 0.5s;
+}
+.about.night
+{
+  background:#333 ;
 }
 .about img
 {
